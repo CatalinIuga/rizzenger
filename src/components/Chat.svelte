@@ -10,7 +10,21 @@
 		},
 		{
 			id: '1',
-			message: 'Hello',
+			message: 'Hello from John Doe',
+			time: '10:00',
+			sender: 'John Doe'
+		},
+		{
+			id: '2',
+			message:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam,',
+			time: '9:00',
+			sender: 'Jane Doe'
+		},
+		{
+			id: '1',
+			message:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam, voluptatum. Qui quibusdam,',
 			time: '10:00',
 			sender: 'John Doe'
 		}
@@ -21,7 +35,7 @@
 <div class="m-4 ml-0 h-[84vh] w-full rounded-md bg-foreground p-4">
 	<!-- Conversation info -->
 	<div class="flex items-center justify-between">
-		<div class="flex">
+		<div class="flex gap-3">
 			<img
 				class="h-12 w-12 rounded-full border-2 border-solid border-black"
 				src="https://i.pravatar.cc/150?img=3"
@@ -29,7 +43,7 @@
 			/>
 			<div class="flex-1">
 				<h3 class="font-display text-lg text-text">Jane Doe</h3>
-				<p class="text-sm text-text">Online</p>
+				<p class="text-sm text-green-400">Online</p>
 			</div>
 		</div>
 		<!-- Actions on conversation -->

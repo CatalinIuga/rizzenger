@@ -9,11 +9,7 @@
 
 <div {id}>
 	<div class="flex cursor-pointer items-center gap-3 rounded-lg p-2 hover:bg-background">
-		<img
-			class="h-12 w-12 rounded-full border-2 border-solid border-green-500"
-			src={avatar}
-			alt="avatar"
-		/>
+		<img class="h-12 w-12 rounded-full" src={avatar} alt="avatar" />
 		<div class="flex-1">
 			<h3 class="font-display text-lg text-text">{name}</h3>
 			<p class="text-sm text-text">{lastMessageSender}: {lastMessage}</p>

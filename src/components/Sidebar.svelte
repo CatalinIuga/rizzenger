@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Conversation from '../components/Conversation.svelte';
 	import Search from '../components/Search.svelte';
 	const conversations = [
@@ -51,13 +51,16 @@
 			avatar: 'https://i.pravatar.cc/150?img=3'
 		}
 	];
+	let search: boolean;
 </script>
 
 <aside class="left-3 m-4 mb-0 h-[84vh] w-[35vw] rounded-lg bg-foreground p-4 pr-2">
-	<Search />
-	<div class="mt-2 h-[72vh] overflow-y-auto">
-		{#each conversations as conversation}
-			<Conversation {...conversation} />
-		{/each}
-	</div>
+	<Search bind:search />
+	{#if !search}
+		<div class="mt-2 h-[72vh] overflow-y-auto">
+			{#each conversations as conversation}
+				<Conversation {...conversation} />
+			{/each}
+		</div>
+	{/if}
 </aside>
